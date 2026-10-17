@@ -26,15 +26,15 @@ public class Main {
 
             if(opcion == 1) {
                 System.out.println("Has agregado un producto PREMIUM.");
-                caja.agregarProductoPremium(15000);
+                caja.agregarProductoPremium(50000);
 
             } else if (opcion == 2) {
                 System.out.println("Has agregado un producto MEDIO.");
-                caja.agregarProducto(6000);
+                caja.agregarProducto(20000);
 
             } else if (opcion == 3) {
                 System.out.println("Has agregado un producto BASICO.");
-                caja.agregarProducto(2800);
+                caja.agregarProducto(10800);
 
             } else if (opcion == 4) {
                 System.out.println("\n" + "CERRANDO CAJA..." + "\n" + 
