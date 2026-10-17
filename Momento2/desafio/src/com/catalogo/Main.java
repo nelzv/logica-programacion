@@ -12,6 +12,30 @@ public class Main {
 
         CajaRegistradora caja = new CajaRegistradora();
 
+        int opcion;
+
+        do{
+            System.out.println("// MENU DE CAJA //");
+            System.out.println("1. Agregar producto PREMIUM" + "\n" +
+                               "2. Agregar producto MEDIO" + "\n" +
+                               "3. Agregar producto BASICO" + "\n" +
+                               ">><<>><<>><<>><<>><<>><<>><<>><<" + "\n" +
+                               "POR FAVOR, INGRESA UNA OPCION: ");
+                               opcion = sc.nextInt();
+            if(opcion == 1) {
+                System.out.println("Has agregado un producto PREMIUM.");
+            } else if (opcion == 2) {
+                System.out.println("Has agregado un producto MEDIO.");
+            } else if (opcion == 3) {
+                System.out.println("Has agregado un producto BASICO.");
+            } else if (opcion == 4) {
+                System.out.println("CERRANDO CAJA..." + "\n" + 
+                                   "  GENERANDO FACTURA...");
+            } else {
+                System.out.println("ERROR: Opcion invalida, intentelo nuevamente.");
+            }                                                
+                               
+        } while(opcion != 4);
 
     }
 }
