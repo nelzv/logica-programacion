@@ -24,10 +24,13 @@ public class Main {
                                opcion = sc.nextInt();
             if(opcion == 1) {
                 System.out.println("Has agregado un producto PREMIUM.");
+                caja.agregarProductoPremium(15000);
             } else if (opcion == 2) {
                 System.out.println("Has agregado un producto MEDIO.");
+                caja.agregarProducto(6000);
             } else if (opcion == 3) {
                 System.out.println("Has agregado un producto BASICO.");
+                caja.agregarProducto(2800);
             } else if (opcion == 4) {
                 System.out.println("CERRANDO CAJA..." + "\n" + 
                                    "  GENERANDO FACTURA...");
