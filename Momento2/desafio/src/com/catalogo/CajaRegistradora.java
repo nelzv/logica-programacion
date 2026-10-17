@@ -6,11 +6,12 @@ public class CajaRegistradora {
     public double totalBrutoAcumulado;
     public int articulosComprados;
     public int articulosPremium;
-}
+
 
 /*CONSTRUCTOR */
-public CajaRegistradora(double totalBrutoAcumulado, int articulosComprados, int articulosPremium) {
-    this.totalBrutoAcumulado = totalBrutoAcumulado;
-    this.articulosComprados = articulosComprados;
-    this.articulosPremium = articulosPremium;
+public CajaRegistradora() {
+    this.totalBrutoAcumulado = 0.0;
+    this.articulosComprados = 0;
+    this.articulosPremium = 0;
+    }
 }
