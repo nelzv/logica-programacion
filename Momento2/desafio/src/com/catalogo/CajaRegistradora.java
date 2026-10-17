@@ -32,12 +32,12 @@ public CajaRegistradora() {
     public void factura(){
      System.out.println(">>>>>>>>><<<<<<<<<" + "\n" +
                         "FACTURA DE COMPRA" + "\n" +
-                        ">>>>>>>>><<<<<<<<<"
+                        ">>>>>>>>><<<<<<<<<" + "\n"
      );
-     
+
      if(this.productosComprados == 0) {
-        System.out.println("ERROR : No se registro ningun producto, transaccion cancelada." + "\n" +
-                           "CERRANDO CAJA ... "
+        System.out.println("\n" + "ERROR : No se registro ningun producto, transaccion cancelada." + "\n" +
+                           "CERRANDO CAJA ... " + "\n"
         );
         return;
         }
@@ -62,7 +62,7 @@ public CajaRegistradora() {
         System.out.println("IVA (19%): $" + iva);
         System.out.println("TOTAL A PAGAR: $" + totalFinal);
         System.out.println("----------------------------------");
-        System.out.println("% de productos PREMIUM: " + porcentajePremium + "%");
-        System.out.println("##################################");
+        System.out.println("Porcentaje de productos PREMIUM: " + porcentajePremium + "%");
+        System.out.println("##################################" + "\n");
             }
         }
