@@ -36,7 +36,7 @@ public CajaRegistradora() {
      );
 
      if(this.productosComprados == 0) {
-        System.out.println("\n" + "ERROR : No se registro ningun producto, transaccion cancelada." + "\n" +
+        System.out.println("ERROR : No se registro ningun producto, transaccion cancelada." + "\n" +
                            "CERRANDO CAJA ... " + "\n"
         );
         return;

@@ -16,9 +16,9 @@ public class Main {
 
         do{
             System.out.println("// MENU DE CAJA //" + "\n");
-            System.out.println("1. Agregar producto PREMIUM" + "\n" +
-                               "2. Agregar producto MEDIO" + "\n" +
-                               "3. Agregar producto BASICO" + "\n" + "\n" +
+            System.out.println("1. Agregar producto PREMIUM > $ 50000 " + "\n" +
+                               "2. Agregar producto MEDIO > $ 20000" + "\n" +
+                               "3. Agregar producto BASICO > $ 10800" + "\n" + "\n" +
                                "4. Finalizar la compra." + "\n" +
                                ">><<>><<>><<>><<>><<>><<>><<>><<" + "\n" +
                                "POR FAVOR, INGRESA UNA OPCION: " + "\n");
