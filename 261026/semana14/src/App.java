@@ -1,5 +1,21 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Indica el nombre a convertir");        
+        /* String nombre = sc.nextLine();*/
+        conversionLower(sc.nextLine());
+        conversionUpper(sc.nextLine());
+        sc.close();
+
     }
+            public static void conversionLower(String nombre){
+                System.out.println(nombre.toLowerCase());
+        }
+
+        public static void conversionUpper(String nombre){
+                System.out.println(nombre.toUpperCase());
+        }
 }
