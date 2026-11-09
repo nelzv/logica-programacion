@@ -37,7 +37,7 @@ El momento 1 lo realicé en otro repositorio
 [CERTIFICADO PLATZI](https://platzi.com/p/casoto576/curso/13690-course/diploma/detalle/)
 
 ## Momento 3
-[DESAFIO]
+[DESAFIO](https://github.com/nelzv/logica-programacion/tree/main/Momento3)
 [CERTIFICADO PLATZI]
 # DESAFIOS EN PROCESO
 
