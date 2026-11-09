@@ -1,17 +1,18 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
 
         /*
-         * CREADO POR EL MUY MUY!!
+         * 
          * CARLOS NEL SOTO DIAZ
          * CESDE / GCO GRUPO URIBE
          * PARA EL PROFESOR
          * SANTIAGO YOSA
-         * 
-         * SALUDOS PROFE!
+        
          */
+
+        /* array y entero contador/opcion */
 
         String[] marcas = { "Naf Naf", "Americanino", "Esprit", null, null };
         Scanner lector = new Scanner(System.in);
@@ -33,6 +34,10 @@ public class App {
             opcion = lector.nextInt();
             lector.nextLine();
 
+
+
+        /*MARCAS VIGENTES*/
+
             switch (opcion) {
                 case 1:
                     System.out.println("\n::::::::::: MARCAS VIGENTES :::::::::::\n");
@@ -43,11 +48,16 @@ public class App {
                     }
                     System.out.println("\n::::::::::::::::::::::::::::::::::::::::::");
                     break;
+
+
+                /*DISPONIBILIDAD DE MARCA*/
+
                 case 2:
                     System.out.println("\n::::::: VALIDAR DISPONIBILIDAD :::::::\n");
                     System.out.print("   Ingrese el nombre de la marca: ");
                     String nombreBuscado = lector.nextLine();
-                    boolean disponible = nombreFuncion(marcas, nombreBuscado);
+                    boolean disponible = nombreDisponibilidad(marcas, nombreBuscado);
+                    /* nota;; esta funcion kon boolean es la que invoca el metodo de abajo */
                     System.out.println();
                     if (disponible) {
                         System.out.println("   >> La marca SI esta disponible.");
@@ -56,7 +66,10 @@ public class App {
                     }
                     System.out.println("\n::::::::::::::::::::::::::::::::::::::::::");
                     break;
-                case 3:
+
+                /*REGISTRO DE MARCA*/
+
+                    case 3:
                     System.out.println("\n::::::: REGISTRAR NUEVA MARCA :::::::\n");
                     System.out.print("   Ingrese nombre de la nueva marca: ");
                     String nuevaMarca = lector.nextLine();
@@ -75,6 +88,9 @@ public class App {
                     }
                     System.out.println("\n::::::::::::::::::::::::::::::::::::::::::");
                     break;
+
+                /*SALIR DEL DOWHILE*/
+
                 case 4:
                     System.out.println("\n::::::::::::::::::::::::::::::::::::::::::");
                     System.out.println("::       SALIENDO DEL PROGRAMA ...      ::");
@@ -89,7 +105,9 @@ public class App {
         lector.close();
     }
 
-    public static boolean nombreFuncion(String[] marcas, String nombreBuscado) {
+    /*FUNCION*/
+
+    public static boolean nombreDisponibilidad(String[] marcas, String nombreBuscado) {
         for (int i = 0; i < marcas.length; i++) {
             if (marcas[i] != null && marcas[i].equalsIgnoreCase(nombreBuscado)) {
                 return true;
